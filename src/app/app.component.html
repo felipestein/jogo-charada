@@ -1,0 +1,17 @@
+<div class="principal">
+  <div class="palavras">
+    <ng-container *ngFor="let item of matrix">
+      <div class="letraPrincipal">
+        <ng-container *ngFor="let item of item">
+          <div class="letraFilha">letra</div>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="teclado">
+    <ng-container *ngFor="let item of teclado">
+      <button>{{item.tecla}}</button>
+    </ng-container>
+  </div>
+</div>
